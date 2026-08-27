@@ -128,6 +128,10 @@ h2.section-title {
   color: var(--ink);
   font-size: 20px;
   cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  z-index: 1;
 }
 
 /* ---------- Buttons ---------- */
@@ -584,7 +588,6 @@ footer.site-footer {
   .main-nav { display: none; }
   .nav-toggle { display: flex; align-items: center; justify-content: center; }
   .hero .container { grid-template-columns: 1fr; }
-  .hero-visual { order: -1; }
   .feature-split, .split-row, .split-row.reverse { grid-template-columns: 1fr; }
   .split-row.reverse .split-visual, .split-row.reverse .split-text { order: 0; }
   .problem-grid, .cards-grid, .report-grid { grid-template-columns: repeat(2, 1fr); }
