@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/calutecc/repositories/Site-LigFlow/
+    - /bin/rm -rf $DEPLOYPATH/app
+    - /bin/ln -sfn /home/calutecc/ligflow.calutec.com.br $DEPLOYPATH/app
