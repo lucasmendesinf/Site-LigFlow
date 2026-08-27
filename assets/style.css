@@ -588,6 +588,7 @@ footer.site-footer {
 /* ---------- Mobile nav ---------- */
 @media (max-width: 960px) {
   .main-nav { display: none; }
+  .header-cta { display: none; }
   .nav-toggle { display: flex; align-items: center; justify-content: center; }
   .hero .container { grid-template-columns: 1fr; }
   .feature-split, .split-row, .split-row.reverse { grid-template-columns: 1fr; }
@@ -611,9 +612,12 @@ footer.site-footer {
 .mobile-menu {
   display: none;
   position: fixed;
-  inset: 76px 0 0 0;
+  top: 76px;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background: var(--bg);
-  z-index: 99;
+  z-index: 150;
   padding: 24px;
   overflow-y: auto;
 }
