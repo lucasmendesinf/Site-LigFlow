@@ -199,6 +199,8 @@ h2.section-title {
   margin-bottom: 22px;
 }
 
+.hero-title-mobile { display: none; }
+
 .hero h1 .accent { color: var(--primary); }
 
 .hero p.lead {
@@ -602,6 +604,8 @@ footer.site-footer {
   .hero-actions .btn { width: 100%; }
   .cta-banner { padding: 44px 24px; }
   .floaty-1 { position: static; margin-bottom: 14px; }
+  .hero-title-desktop { display: none; }
+  .hero-title-mobile { display: block; font-size: clamp(30px, 8vw, 40px); }
 }
 
 .mobile-menu {
