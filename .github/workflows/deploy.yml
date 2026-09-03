@@ -1,0 +1,16 @@
+name: Deploy to VPS2
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger deploy on VPS2
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "${{ secrets.VPS2_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh -o StrictHostKeyChecking=accept-new -i ~/.ssh/deploy_key deploy@179.199.142.162
